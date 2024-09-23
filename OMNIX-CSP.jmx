@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <stringProp name="TestPlan.comments">Environment</stringProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="QA" elementType="Argument">
+            <stringProp name="Argument.name">QA</stringProp>
+            <stringProp name="Argument.value">https://omnix-qarel.cebupacificair.com/en-PH/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="QA1" elementType="Argument">
+            <stringProp name="Argument.name">QA1</stringProp>
+            <stringProp name="Argument.value">https://omnix-qa.cebupacificair.com/en-PH/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="QA2" elementType="Argument">
+            <stringProp name="Argument.name">QA2</stringProp>
+            <stringProp name="Argument.value">https://omnix-qa2.cebupacificair.com/en-PH/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="QA3" elementType="Argument">
+            <stringProp name="Argument.name">QA3</stringProp>
+            <stringProp name="Argument.value">https://omnix-qa3.cebupacificair.com/en-PH/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="QA4" elementType="Argument">
+            <stringProp name="Argument.name">QA4</stringProp>
+            <stringProp name="Argument.value">https://omnix-qa4.cebupacificair.com/en-PH/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="QA5" elementType="Argument">
+            <stringProp name="Argument.name">QA5</stringProp>
+            <stringProp name="Argument.value">https://omnix-qa5.cebupacificair.com/en-PH/  </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="QA Support" elementType="Argument">
+            <stringProp name="Argument.name">QA Support</stringProp>
+            <stringProp name="Argument.value">https://omnix-support-qa.cebupacificair.com/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Omnix Blue" elementType="Argument">
+            <stringProp name="Argument.name">Omnix Blue</stringProp>
+            <stringProp name="Argument.value">https://internal-omnix-qa.cebupacificair.com/en-PH/  </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Staging" elementType="Argument">
+            <stringProp name="Argument.name">Staging</stringProp>
+            <stringProp name="Argument.value">https://omnixstaging.cebupacificair.com/en-PH/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Production" elementType="Argument">
+            <stringProp name="Argument.name">Production</stringProp>
+            <stringProp name="Argument.value">https://www.cebupacificair.com/en-PH/ </stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config">
+        <boolProp name="WebDriverConfig.acceptinsecurecerts">false</boolProp>
+        <boolProp name="WebDriverConfig.reset_per_iteration">true</boolProp>
+        <stringProp name="WebDriverConfig.driver_path">/Users/jcojulius/Downloads/chromedriver-mac-x64/chromedriver</stringProp>
+        <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+        <boolProp name="WebDriverConfig.headless">false</boolProp>
+        <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+        <stringProp name="ChromeDriverConfig.additional_args"></stringProp>
+        <stringProp name="ChromeDriverConfig.binary_path"></stringProp>
+        <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+        <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+        <stringProp name="WebDriverConfig.http_host"></stringProp>
+        <intProp name="WebDriverConfig.http_port">8080</intProp>
+        <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+        <stringProp name="WebDriverConfig.https_host"></stringProp>
+        <intProp name="WebDriverConfig.https_port">8080</intProp>
+        <boolProp name="WebDriverConfig.use_ftp_proxy">true</boolProp>
+        <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+        <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+        <boolProp name="WebDriverConfig.use_socks_proxy">true</boolProp>
+        <stringProp name="WebDriverConfig.socks_host"></stringProp>
+        <intProp name="WebDriverConfig.socks_port">8080</intProp>
+        <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+        <stringProp name="WebDriverConfig.custom_capabilites"></stringProp>
+      </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="closeWizardModal" elementType="Argument">
+            <stringProp name="Argument.name">closeWizardModal</stringProp>
+            <stringProp name="Argument.value">//img[@alt=&quot;close&quot;]</stringProp>
+            <stringProp name="Argument.desc">Close wizard modal button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="iAgree" elementType="Argument">
+            <stringProp name="Argument.name">iAgree</stringProp>
+            <stringProp name="Argument.value">//a[text()=&quot;I agree&quot;]</stringProp>
+            <stringProp name="Argument.desc">Agree button for privacy policy and cookie policy</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="searchFlightsButtonHomePage" elementType="Argument">
+            <stringProp name="Argument.name">searchFlightsButtonHomePage</stringProp>
+            <stringProp name="Argument.value">//button[text()=&quot; Search flights &quot;]</stringProp>
+            <stringProp name="Argument.desc">Search flights button from home page</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="destinationInput" elementType="Argument">
+            <stringProp name="Argument.name">destinationInput</stringProp>
+            <stringProp name="Argument.value">(//input[contains(@id,&quot;destinationFormControl-0&quot;)])[2]</stringProp>
+            <stringProp name="Argument.desc">Destination input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="owDepartingDate" elementType="Argument">
+            <stringProp name="Argument.name">owDepartingDate</stringProp>
+            <stringProp name="Argument.value">(//input[@placeholder=&quot;Departing on&quot;])[4]</stringProp>
+            <stringProp name="Argument.desc">One-way departing date picker</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="selectDatesButton" elementType="Argument">
+            <stringProp name="Argument.name">selectDatesButton</stringProp>
+            <stringProp name="Argument.value">//button[contains(text(),&quot;Select dates&quot;)]</stringProp>
+            <stringProp name="Argument.desc">Select dates button from date picker</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="searchFlightsButtonModal" elementType="Argument">
+            <stringProp name="Argument.name">searchFlightsButtonModal</stringProp>
+            <stringProp name="Argument.value">(//button[contains(text(),&quot;Search flights&quot;)])[2]</stringProp>
+            <stringProp name="Argument.desc">Search flights button from search flight modal</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="departingFlightFirst" elementType="Argument">
+            <stringProp name="Argument.name">departingFlightFirst</stringProp>
+            <stringProp name="Argument.value">//button[@id=&quot;0-0&quot;]</stringProp>
+            <stringProp name="Argument.desc">Departing flight first index</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="goBasic" elementType="Argument">
+            <stringProp name="Argument.name">goBasic</stringProp>
+            <stringProp name="Argument.value">//button[contains(text(),&quot;I’m okay with fare only&quot;)]</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Go basic bundle</stringProp>
+          </elementProp>
+          <elementProp name="goEasy" elementType="Argument">
+            <stringProp name="Argument.name">goEasy</stringProp>
+            <stringProp name="Argument.value">//button[contains(text(),&quot;I want cheaper bags &amp; seats&quot;)]</stringProp>
+            <stringProp name="Argument.desc">Go easy bundle</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="goFlexi" elementType="Argument">
+            <stringProp name="Argument.name">goFlexi</stringProp>
+            <stringProp name="Argument.value">//button[contains(text(),&quot;I need flexible travel plans&quot;)]</stringProp>
+            <stringProp name="Argument.desc">Go flexi</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="salutationDropdown" elementType="Argument">
+            <stringProp name="Argument.name">salutationDropdown</stringProp>
+            <stringProp name="Argument.value">(//input[@placeholder=&quot;Select&quot;])[1]</stringProp>
+            <stringProp name="Argument.desc">Salutation dropdown</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="continueButton" elementType="Argument">
+            <stringProp name="Argument.name">continueButton</stringProp>
+            <stringProp name="Argument.value">//a[contains(text(),&quot;Continue&quot;)]</stringProp>
+            <stringProp name="Argument.desc">Continue button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cebLoader" elementType="Argument">
+            <stringProp name="Argument.name">cebLoader</stringProp>
+            <stringProp name="Argument.value">//img[@src=&quot;/component-assets/images/ceb-loader.png&quot;]</stringProp>
+            <stringProp name="Argument.desc">Ceb loader</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="firstNameInput" elementType="Argument">
+            <stringProp name="Argument.name">firstNameInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;Enter first name&quot;]</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">First name input</stringProp>
+          </elementProp>
+          <elementProp name="lastNameInput" elementType="Argument">
+            <stringProp name="Argument.name">lastNameInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;Enter last name&quot;]</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Last name input</stringProp>
+          </elementProp>
+          <elementProp name="dayInput" elementType="Argument">
+            <stringProp name="Argument.name">dayInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;DD&quot;]</stringProp>
+            <stringProp name="Argument.desc">Day input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="monthInput" elementType="Argument">
+            <stringProp name="Argument.name">monthInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;Month&quot;]</stringProp>
+            <stringProp name="Argument.desc">Month input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="yearInput" elementType="Argument">
+            <stringProp name="Argument.name">yearInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;YYYY&quot;]</stringProp>
+            <stringProp name="Argument.desc">Year input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="nationalityDropdown" elementType="Argument">
+            <stringProp name="Argument.name">nationalityDropdown</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;Select nationality&quot;]</stringProp>
+            <stringProp name="Argument.desc">Nationality dropdown</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="contactNumInput" elementType="Argument">
+            <stringProp name="Argument.name">contactNumInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;9XX 1234567&quot;]</stringProp>
+            <stringProp name="Argument.desc">Contact number input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="emailInput" elementType="Argument">
+            <stringProp name="Argument.name">emailInput</stringProp>
+            <stringProp name="Argument.value">(//input[@placeholder=&quot;sample@email.com&quot;])[1]</stringProp>
+            <stringProp name="Argument.desc">Email input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="emailInput2" elementType="Argument">
+            <stringProp name="Argument.name">emailInput2</stringProp>
+            <stringProp name="Argument.value">(//input[@placeholder=&quot;sample@email.com&quot;])[2]</stringProp>
+            <stringProp name="Argument.desc">Re-enter email input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="privacyPolicyCheckBox" elementType="Argument">
+            <stringProp name="Argument.name">privacyPolicyCheckBox</stringProp>
+            <stringProp name="Argument.value">//label[@for=&quot;terms&quot;]</stringProp>
+            <stringProp name="Argument.desc">Privacy policy checkbox</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mbHeader" elementType="Argument">
+            <stringProp name="Argument.name">mbHeader</stringProp>
+            <stringProp name="Argument.value">(//a[contains(text(),&quot;Manage&quot;)])[1]</stringProp>
+            <stringProp name="Argument.desc">Manage booking header</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mbPage" elementType="Argument">
+            <stringProp name="Argument.name">mbPage</stringProp>
+            <stringProp name="Argument.value">//a[contains(text(),&quot; Manage Booking &quot;)]</stringProp>
+            <stringProp name="Argument.desc">Manage booking page</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mbBookingRefInput" elementType="Argument">
+            <stringProp name="Argument.name">mbBookingRefInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;e.g. 1AB234 or 013402093131&quot;]</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Booking reference number input</stringProp>
+          </elementProp>
+          <elementProp name="mbNameMailInput" elementType="Argument">
+            <stringProp name="Argument.name">mbNameMailInput</stringProp>
+            <stringProp name="Argument.value">//input[@placeholder=&quot;Enter last name or email address&quot;]</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Last name of email input</stringProp>
+          </elementProp>
+          <elementProp name="mbContinueAsGuestButton" elementType="Argument">
+            <stringProp name="Argument.name">mbContinueAsGuestButton</stringProp>
+            <stringProp name="Argument.value">//button[contains(text(),&quot;Continue as guest&quot;)]</stringProp>
+            <stringProp name="Argument.desc">Continue as guest button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="updateGuestDetailsCard" elementType="Argument">
+            <stringProp name="Argument.name">updateGuestDetailsCard</stringProp>
+            <stringProp name="Argument.value">//h6[text()=&quot;Update Guest Details&quot;]</stringProp>
+            <stringProp name="Argument.desc">Update guest details card</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="updateGuestDetailsButton" elementType="Argument">
+            <stringProp name="Argument.name">updateGuestDetailsButton</stringProp>
+            <stringProp name="Argument.value">//a[contains(text(),&quot;Update guest details&quot;)]</stringProp>
+            <stringProp name="Argument.desc">Update guest details button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="bookHeader" elementType="Argument">
+            <stringProp name="Argument.name">bookHeader</stringProp>
+            <stringProp name="Argument.value">(//a[contains(text(),&quot;Book&quot;)])[1]</stringProp>
+            <stringProp name="Argument.desc">Book header</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspPage" elementType="Argument">
+            <stringProp name="Argument.name">cspPage</stringProp>
+            <stringProp name="Argument.value">//a[contains(text(),&quot; CEB Super Pass &quot;)]</stringProp>
+            <stringProp name="Argument.desc">Ceb super pass page</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspLoginAndContinueButton" elementType="Argument">
+            <stringProp name="Argument.name">cspLoginAndContinueButton</stringProp>
+            <stringProp name="Argument.value">//a[@class=&quot;o-btn o-btn--primary-blue continue-button&quot;]</stringProp>
+            <stringProp name="Argument.desc">CSP log in and continue button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="oktaEmailInput" elementType="Argument">
+            <stringProp name="Argument.name">oktaEmailInput</stringProp>
+            <stringProp name="Argument.value">//input[@id=&quot;input27&quot;]</stringProp>
+            <stringProp name="Argument.desc">Okta email input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="oktaNextButton" elementType="Argument">
+            <stringProp name="Argument.name">oktaNextButton</stringProp>
+            <stringProp name="Argument.value">//input[@class=&quot;button button-primary&quot;]</stringProp>
+            <stringProp name="Argument.desc">Okta next button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="oktaPasswordButton" elementType="Argument">
+            <stringProp name="Argument.name">oktaPasswordButton</stringProp>
+            <stringProp name="Argument.value">(//a[@class=&quot;button select-factor link-button&quot;])[2]</stringProp>
+            <stringProp name="Argument.desc">Okta password button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="oktaPasswordInput" elementType="Argument">
+            <stringProp name="Argument.name">oktaPasswordInput</stringProp>
+            <stringProp name="Argument.value">//input[@id=&quot;input84&quot;]</stringProp>
+            <stringProp name="Argument.desc">Okta password input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="oktaVerifyButton" elementType="Argument">
+            <stringProp name="Argument.name">oktaVerifyButton</stringProp>
+            <stringProp name="Argument.value">//input[@class=&quot;button button-primary&quot;]</stringProp>
+            <stringProp name="Argument.desc">Okta verify button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspCloseQuickTour" elementType="Argument">
+            <stringProp name="Argument.name">cspCloseQuickTour</stringProp>
+            <stringProp name="Argument.value">//img[@class=&quot;close-button-container&quot;]</stringProp>
+            <stringProp name="Argument.desc">Close CSP quick tour</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspAddGuestButton" elementType="Argument">
+            <stringProp name="Argument.name">cspAddGuestButton</stringProp>
+            <stringProp name="Argument.value">//a[contains(text(),&quot;Add guest&quot;)]</stringProp>
+            <stringProp name="Argument.desc">CSP add guest button</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspContactInfoFname" elementType="Argument">
+            <stringProp name="Argument.name">cspContactInfoFname</stringProp>
+            <stringProp name="Argument.value">//input[@formcontrolname=&quot;firstName&quot;]</stringProp>
+            <stringProp name="Argument.desc">CSP contact information first name input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspContactInfoLname" elementType="Argument">
+            <stringProp name="Argument.name">cspContactInfoLname</stringProp>
+            <stringProp name="Argument.value">//input[@formcontrolname=&quot;lastName&quot;]</stringProp>
+            <stringProp name="Argument.desc">CSP contact information last name input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspContactInfoEmail" elementType="Argument">
+            <stringProp name="Argument.name">cspContactInfoEmail</stringProp>
+            <stringProp name="Argument.value">//input[@formcontrolname=&quot;email&quot;]</stringProp>
+            <stringProp name="Argument.desc">CSP contact information email input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspContactInfoEmail2" elementType="Argument">
+            <stringProp name="Argument.name">cspContactInfoEmail2</stringProp>
+            <stringProp name="Argument.value">//input[@formcontrolname=&quot;retypeEmail&quot;]</stringProp>
+            <stringProp name="Argument.desc">CSP contact information retype input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="cspContactInfoNum" elementType="Argument">
+            <stringProp name="Argument.name">cspContactInfoNum</stringProp>
+            <stringProp name="Argument.value">//input[@formcontrolname=&quot;mobileNumber&quot;]</stringProp>
+            <stringProp name="Argument.desc">CSP contact information mobile number input</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+        <stringProp name="TestPlan.comments">Page elements</stringProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="IB" enabled="false">
+        <stringProp name="TestPlan.comments">Pre-req: 1. Pre-selected travel insurance should be enabled</stringProp>
+        <intProp name="ThreadGroup.num_threads">5</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.duration">300</longProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Home">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(120));
+
+// Measure load time for landing homepage
+WDS.browser.get(&apos;${Staging}&apos;)
+WDS.browser.manage().timeouts().pageLoadTimeout(120, java.util.concurrent.TimeUnit.SECONDS)
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Close wizard modal
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(org.openqa.selenium.By.xpath(&apos;${closeWizardModal}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${closeWizardModal}&apos;)).click()
+
+// Accept cookies
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${iAgree}&apos;)).click()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Search flights">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Measure load time from homepage to search flight modal
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${searchFlightsButtonHomePage}&apos;)).click()
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Search flight one-way
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;(//span[text()=&quot;Round-trip&quot;])[3]&apos;)).click()
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//li/a[contains(text(),&quot;One-way&quot;)]&apos;)).click()
+
+// Enter destination PPS
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${destinationInput}&apos;)).sendKeys(&apos;PPS&apos;)
+
+// Select PPS result
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//span[contains(text(),&quot;Puerto Princesa&quot;)]&apos;)).click()
+
+// Click departing date picker
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${owDepartingDate}&apos;)).click()
+
+//// Click current month to display month picker
+//WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//span[contains(text(),&quot;September 2024&quot;)]&apos;)).click()
+//
+//// Select march 2025
+//WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//span[contains(text(),&quot;Mar&quot;)]&apos;)).click()
+
+// Select 15 date
+//wait.until(org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(org.openqa.selenium.By.xpath(&apos;(//span[contains(text(),&quot;15&quot;)])[2]&apos;)))
+java.lang.Thread.sleep(10000)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;(//span[contains(text(),&quot;28&quot;)])[2]&apos;)).click()
+
+//Click dates button
+//wait.until(org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(org.openqa.selenium.By.xpath(&apos;${selectDatesButton}&apos;)))
+java.lang.Thread.sleep(2000)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${selectDatesButton}&apos;)).click()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Select flights">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Measure loadtime from search flights modal to select flights
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${searchFlightsButtonModal}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Select departing flight
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${departingFlightFirst}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${departingFlightFirst}&apos;)).click()
+
+// Select bundle go basic
+//wait.until(org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(org.openqa.selenium.By.xpath(&apos;${goBasic}&apos;)))
+java.lang.Thread.sleep(2000)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${goBasic}&apos;)).click()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Guest details">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Measure loadtime from select flights to guest details
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${continueButton}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Select salutation
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${salutationDropdown}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${salutationDropdown}&apos;)).click()
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//a[contains(text(),&quot;Mr. &quot;)]&apos;)).click()
+
+// Enter first name
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${firstNameInput}&apos;)).sendKeys(&apos;Juan&apos;)
+
+// Enter last name
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${lastNameInput}&apos;)).sendKeys(&apos;Dela Cruz&apos;)
+
+// Enter DOB
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${dayInput}&apos;)).click()
+//wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;//a[@id=20]&apos;)))
+java.lang.Thread.sleep(1000)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//a[@id=20]&apos;)).click()
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${monthInput}&apos;)).click()
+//wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;//a[@id=&quot;June&quot;]&apos;)))
+java.lang.Thread.sleep(1000)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//a[@id=&quot;June&quot;]&apos;)).click()
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${yearInput}&apos;)).click()
+//wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;//a[@id=1996]&apos;)))
+java.lang.Thread.sleep(1000)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//a[@id=1996]&apos;)).click()
+
+// Enter nationality
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${nationalityDropdown}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;//a[contains(text(),&quot; Philippines, Republic of the &quot;)]&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//a[contains(text(),&quot; Philippines, Republic of the &quot;)]&apos;)).click()
+
+// Enter contact number
+//WDS.browser.executeScript(&apos;arguments[0].scrollIntoView(true);&apos;, WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//a[contains(text(),&quot;Continue&quot;)]&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${contactNumInput}&apos;)).sendKeys(&apos;9367286322&apos;)
+
+// Enter email
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${emailInput}&apos;)).sendKeys(&apos;testmail-qa4@yopmail.com&apos;)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${emailInput2}&apos;)).sendKeys(&apos;testmail-qa4@yopmail.com&apos;)
+
+// Check privacy policy
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${privacyPolicyCheckBox}&apos;)).click()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Add ons">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Measure loadtime from guest details to addons
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${continueButton}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Booking summary">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Measure loadtime from add ons to booking summary
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//button[contains(text(),&quot; Continue &quot;)]&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Check conditions carriage
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//p[starts-with(text(),&quot;By clicking&quot;)]&apos;)).click()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Payment method">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(60));
+
+// Measure loadtime from booking summary to payment method
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//a[contains(text(),&quot;Continue&quot;)]&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MB" enabled="false">
+        <stringProp name="TestPlan.comments">Pre-req: 1. Should have an existing bokked anonymous PNR to run this test</stringProp>
+        <intProp name="ThreadGroup.num_threads">10</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.duration">300</longProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Home">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(120));
+
+// Measure load time for landing homepage
+WDS.browser.get(&apos;${Staging}&apos;)
+WDS.browser.manage().timeouts().pageLoadTimeout(120, java.util.concurrent.TimeUnit.SECONDS)
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Close wizard modal
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(org.openqa.selenium.By.xpath(&apos;${closeWizardModal}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${closeWizardModal}&apos;)).click()
+
+// Accept cookies
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${iAgree}&apos;)).click()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Manage booking" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Measure load time from landing page to Manage booking
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${mbHeader}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${mbPage}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${mbPage}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Manage anonymous booking
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${mbBookingRefInput}&apos;)).sendKeys(&apos;XJ6GKJ&apos;)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${mbNameMailInput}&apos;)).sendKeys(&apos;Friend&apos;)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="My bookings" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Measure load time from manage booking to my booking
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${mbContinueAsGuestButton}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Guest details">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(120));
+
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${updateGuestDetailsCard}&apos;)))
+
+// Measure load time from my booking to guest details
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${updateGuestDetailsCard}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Guest details - update">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(30));
+
+// Update mobile number
+//WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${contactNumInput}&quot;]&apos;)).sendKeys(&apos;9367286321&apos;)
+
+// Check privacy policy
+java.lang.Thread.sleep(15000)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${privacyPolicyCheckBox}&apos;)).click()
+
+// Measure load time when updating guest details
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${updateGuestDetailsButton}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CSP" enabled="false">
+        <stringProp name="TestPlan.comments">Pre-req: 1. CSP Should be enabled, 2. Existing prod member user</stringProp>
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Home">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(120));
+
+// Measure load time for landing homepage
+WDS.browser.get(&apos;${Staging}&apos;)
+WDS.browser.manage().timeouts().pageLoadTimeout(120, java.util.concurrent.TimeUnit.SECONDS)
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Close wizard modal
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable(org.openqa.selenium.By.xpath(&apos;${closeWizardModal}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${closeWizardModal}&apos;)).click()
+
+// Accept cookies
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${iAgree}&apos;)).click()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Ceb super pass">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(120));
+
+// Measure load time from homepage to ceb super pass
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${bookHeader}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cspPage}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspPage}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Okta log in">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(60));
+
+// Measure load time from ceb super pass to okta login
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspLoginAndContinueButton}&apos;)).click()
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cebLoader}&apos;)))
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Enter email address
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${oktaEmailInput}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${oktaEmailInput}&apos;)).sendKeys(&apos;prodcebqa@gmail.com&apos;)
+
+// Click next button
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${oktaNextButton}&apos;)).click()
+
+// Select password entry
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${oktaPasswordButton}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${oktaPasswordButton}&apos;)).click()
+
+// Enter password
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${oktaPasswordInput}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${oktaPasswordInput}&apos;)).sendKeys(&apos;Cebprod@1234&apos;)
+
+//QA user
+//auto_rt_user10@mailinator.com
+//Omnix@1234!
+
+//Staging/Prod user
+//prodcebqa@gmail.com
+//Cebprod@1234</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Ceb super pass details" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(60));
+
+// Measure load time from okta login to CSP details
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${oktaVerifyButton}&apos;)).click()
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Close CSP quick tour
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cspCloseQuickTour}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspCloseQuickTour}&apos;)).click()
+
+// Add guest 1
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;//input[@id=&quot;firstName0&quot;]&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//input[@id=&quot;firstName0&quot;]&apos;)).sendKeys(&apos;Juan&apos;)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//input[@id=&quot;lastName0&quot;]&apos;)).sendKeys(&apos;Dela Cruz&apos;)
+
+// Add guest 2
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspAddGuestButton}&apos;)).click()
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//input[@id=&quot;firstName1&quot;]&apos;)).sendKeys(&apos;Maria&apos;)
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;//input[@id=&quot;lastName1&quot;]&apos;)).sendKeys(&apos;Clara&apos;)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Ceb super pass summary" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(60));
+
+// Measure load time from csp details to csp summary
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${continueButton}&apos;)).click()
+WDS.sampleResult.setLatency(now - ttfb)
+
+// Enter contact information first name
+wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(org.openqa.selenium.By.xpath(&apos;${cspContactInfoFname}&apos;)))
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspContactInfoFname}&apos;)).sendKeys(&apos;Crisostomo&apos;)
+
+// Enter contact information last name
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspContactInfoLname}&apos;)).sendKeys(&apos;Ibarra&apos;)
+
+// Enter contact information email
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspContactInfoEmail}&apos;)).sendKeys(&apos;cris12@yopmail.com&apos;)
+
+// Enter contact information retype email
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspContactInfoEmail2}&apos;)).sendKeys(&apos;cris12@yopmail.com&apos;)
+
+// Enter contact information mobile number
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${cspContactInfoNum}&apos;)).sendKeys(&apos;9368275322&apos;)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Ceb super pass payment" enabled="true">
+          <stringProp name="WebDriverSampler.script">import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+def now = System.currentTimeMillis()
+def ttfb = WDS.browser.executeScript(&apos;return window.performance.timing.responseStart&apos;) as long
+
+def wait = new WebDriverWait(WDS.browser, Duration.ofSeconds(60));
+
+// Measure load time from csp summary to csp payment
+WDS.browser.findElement(org.openqa.selenium.By.xpath(&apos;${continueButton}&apos;)).click()
+WDS.sampleResult.setLatency(now - ttfb)</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">groovy</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
